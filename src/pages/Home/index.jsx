@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import EmptyList from '../../components/common/EmptyList'
 import Header from '../../components/Home/Header'
 import StartupList from '../../components/Home/StartupList'
 import { startupList } from '../../config/data'
@@ -17,16 +18,25 @@ const Home = () => {
   // Search for startups
   const handleSearchResults=()=>{
     const allStartups=startupList
-    const filteredStartups=allStartups.filter(startup=>startup)
+    const filteredStartups=allStartups.filter(startup=>
+      startup.name.toLowerCase().includes(searchKey.toLowerCase().trim())
+    );
+
+    setStartups(filteredStartups);
+  }
+
+  const handleClearSearch = () => {
+    setStartups(startupList)
+    setSearch('')
   }
 
   return (
     <div className="main-container">
         <div className="header-div">
-          <Header />
+          <Header show={true} value={searchKey} clearSearch={handleClearSearch} formSubmit={handleSearchSubmit} handleSearch={e=>setSearch(e.target.value)}/>
         </div>
         <div className="startupList-div">
-          <StartupList startups={startups}/>
+          {!startups.length ? <EmptyList /> :<StartupList startups={startups}/>}
         </div>
     </div>
 

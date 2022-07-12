@@ -1,0 +1,34 @@
+.startup-wrap h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.startup-wrap img {
+    display: flex;
+    margin: auto;
+}
+
+.startup-goBack{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+
+.startup-productHighlights{
+    display: flex;
+    justify-content: space-around;
+}
+
+.startup-productHighlights > div {
+    margin: auto;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+}
+
+.startup-desc {
+    padding: 1rem;
+    margin: 1.5rem;
+}
