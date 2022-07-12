@@ -1,0 +1,16 @@
+.home-header p{
+    color: lightslategrey;
+    font-size: 2rem;
+}
+
+.home-header h1{
+    font-size: 3rem;
+    color: #71cc98;
+}
+
+/* To move search bar to right */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

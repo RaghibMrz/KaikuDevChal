@@ -1,0 +1,19 @@
+.startupItem-link {
+    text-decoration: none;
+    color: black;
+}
+
+.startupItem-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.startupItem-cover {
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.startupList-details {
+    padding: 10px 0px;
+}

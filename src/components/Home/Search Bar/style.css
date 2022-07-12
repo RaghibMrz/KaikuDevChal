@@ -1,0 +1,21 @@
+.searchBar-wrap{
+    background-color: #f0f0f0;
+}
+
+.searchBar-wrap input{
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+}
+
+.searchBar-wrap span{
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.searchBar-wrap button{
+    outline: none;
+    border: none;
+    background-color: #71cc98;
+    color: #fff;
+}
